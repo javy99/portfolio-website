@@ -1,0 +1,301 @@
+/* let us first setup our css (main css) */
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&family=Roboto:wght@700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Advent Pro', sans-serif;
+  transition: .3s ease;
+}
+
+/* colors and default size */
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(182, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;  
+}
+
+/* Default css setup */
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+  align-content: center;
+}
+
+.grid {
+  display: grid;
+  align-content: center;
+}
+
+input, textarea {
+  font-size: 100%;
+}
+
+section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+.icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.btn {
+  border: 2px solid var(--primaryHover);
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+  color: var(--primaryColor);
+  background: transparent;
+}
+
+
+/* button hover effect */
+.btn::before {
+  content: '';
+  height: 100%;
+  width: 0%;
+  background: var(--primaryColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: .2s;
+}
+
+.btn::after {
+  content: '';
+  height: 100%;
+  width: 0%;
+  background: var(--BgColor);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn:hover::before, .btn:hover::after {
+  width: 100%;
+}
+
+.navLink {
+  position: relative;
+}
+
+/* links hover effect */
+.navLink::before {
+  content: '';
+  position: absolute;
+  background: var(--primaryHover);
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  left: 0;
+  transition: .3s;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  background: var(--projectCardColor);
+  height: 2px;
+  width: 0%;
+  bottom: -3px;
+  left: 0;
+  transition: .8s;
+}
+
+/* Section title */
+.sectionTitle {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: var(--textColor);
+  display: flex;
+  align-content: center;
+}
+
+.titleNumber {
+  color: var(--primaryColor);
+  margin: 0 0.6rem;
+  font-weight: 600;
+}
+
+.titleText {
+  position: relative;
+  width: max-content;
+}
+
+.underline {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  top: 35px;
+  left: 0;
+  border-radius: 10px;
+  background: var(--secondaryColor);
+  overflow: hidden;
+}
+
+.underline span {
+  top: 0;
+  left: 10px;
+  height: 100%;
+  width: 10px;
+  border-radius: 10px;
+  position: absolute;
+  background: var(--textColor);
+  animation: moveLine 2s linear infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    left: -20px;
+  }
+
+  100% {
+    left: 100px   ;
+  }
+}
+
+/* Done with default styling */
+
+/* BodyStyling */
+body {
+  background: var(--BgColor);
+  color: white;
+}
+
+::selection {
+  background-color: var(--primaryColor);
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: var(--projectCardColor);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primaryHover);
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .section {
+    padding: 6rem 0 4rem;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .section {
+    padding: 6rem 0 4rem;
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    zoom: 1;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  body {
+    zoom: 1.7;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */

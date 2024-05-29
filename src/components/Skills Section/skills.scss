@@ -1,0 +1,186 @@
+/* colors and default size */
+:root {
+  --primaryColor: #00eaff;
+  --primaryHover: hsl(182, 92%, 41%);
+  --secondaryColor: rgb(150, 162, 188);
+  --paragraphColor: rgb(127, 127, 175);
+  --BgColor: #031a30;
+  --formColor: rgb(2, 15, 29);
+  --projectCardColor: #072340;
+  --textColor: #dae4fb;
+  --headerHeight: 3rem;
+}
+
+.skills {
+  .skillsContainer {
+    gap: 2rem 0;
+    padding: 1rem 0;
+
+    .skillGroup {
+      .groupTitle {
+        color: var(--textColor);
+
+        .subTitle {
+          display: block;
+          padding: 0.3rem 0 1rem;
+          color: var(--secondaryColor);
+          font-weight: 600;
+        }
+      }
+
+      .generalSkills {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(
+          3,
+          1fr
+        ); // at some width we shall have a repeat of 4,1fr
+        gap: 1rem;
+
+        .singleSkill {
+          display: grid;
+          align-items: center;
+          justify-content: center;
+
+          .iconBox {
+            position: relative;
+            height: 70px;
+            width: 50px;
+            background: var(--projectCardColor);
+            border: 2px solid var(--secondaryColor);
+            border-radius: 3rem;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            z-index: 500;
+
+            .icon {
+              font-size: 28px;
+              z-index: 500;
+            }
+
+            &::before {
+              content: "";
+              height: 0;
+              width: 100%;
+              background: var(--primaryHover);
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              transition: 0.2s;
+            }
+
+            &::after {
+              content: "";
+              height: 0;
+              width: 100%;
+              background: var(--BgColor);
+              position: absolute;
+              top: 0;
+              left: 0;
+              z-index: 1;
+              transition: 0.5s;
+            }
+
+            &:hover {
+              color: var(--textColor);
+              border: 2px solid var(--primaryColor);
+
+              .icon {
+                color: var(--primaryColor);
+              }
+            }
+
+            &:hover::before,
+            &:hover::after {
+              height: 100%;
+            }
+          }
+
+          .skillName {
+            padding-top: 0.3rem;
+            text-align: center;
+            font-weight: 600;
+            color: var(--secondaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+// MEDIA QUERIES ==================>
+@media screen and (min-width: 480px) {
+  .skills {
+    .skillsContainer {
+      .skillGroup {
+        .generalSkills {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .skills {
+    .skillsContainer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: flex-start;
+      justify-content: center;
+      margin: auto;
+
+      .skillGroup {
+        .generalSkills {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .skills {
+    width: 70%;
+    margin: auto;
+
+    .skillsContainer {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: flex-start;
+
+      .skillGroup {
+        .generalSkills {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .skills {
+    .skillsContainer {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      align-items: flex-start;
+
+      .skillGroup {
+        .generalSkills {
+          grid-template-columns: repeat(2, 1fr);
+          padding-right: 5rem;
+          row-gap: 1.5rem;
+
+          .singleSkill {
+            align-content: flex-start;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
