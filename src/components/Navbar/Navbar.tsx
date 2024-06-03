@@ -50,13 +50,23 @@ const Navbar = () => {
             </a>
           </li>
           <li className="navItem">
+            <a href="#work" className="navLink">
+              <span className="headerNumber">3.</span>Work Experience
+            </a>
+          </li>
+          <li className="navItem">
+            <a href="#education" className="navLink">
+              <span className="headerNumber">4.</span>Education
+            </a>
+          </li>
+          <li className="navItem">
             <a href="#projects" className="navLink">
-              <span className="headerNumber">3.</span>Projects
+              <span className="headerNumber">5.</span>Projects
             </a>
           </li>
           <li className="navItem">
             <a href="#contact" className="navLink">
-              <span className="headerNumber">4.</span>Contact
+              <span className="headerNumber">6.</span>Contact
             </a>
           </li>
           <button className="btn">

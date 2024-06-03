@@ -6,6 +6,8 @@ import Skills from "./components/Skills Section/Skills";
 import Projects from "./components/Projects Section/Projects";
 import Contact from "./components/Contact Section/Contact";
 import Footer from "./components/Footer/Footer";
+import WorkExperience from "./components/WorkExperience Section/WorkExperience";
+import Education from "./components/Education Section/Education";
 
 const App = () => {
   return (
@@ -14,6 +16,8 @@ const App = () => {
       <Home />
       <About />
       <Skills />
+      <WorkExperience />
+      <Education />
       <Projects />
       <Contact />
       <Footer />

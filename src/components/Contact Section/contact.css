@@ -94,10 +94,6 @@
   color: var(--textColor);
   font-weight: 600;
 }
-.contact .contactContainer .form form input::-moz-placeholder, .contact .contactContainer .form form textarea::-moz-placeholder {
-  color: var(--secondaryColor);
-  opacity: 0.5;
-}
 .contact .contactContainer .form form input::placeholder,
 .contact .contactContainer .form form textarea::placeholder {
   color: var(--secondaryColor);
@@ -136,9 +132,5 @@
     align-items: flex-start !important;
   }
 }
-@media screen and (min-width: 1240px) {
-  .contact {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}/*# sourceMappingURL=contact.css.map */
+
+/*# sourceMappingURL=contact.css.map */
