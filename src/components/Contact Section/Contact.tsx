@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { FormEvent, useRef } from "react";
 import "./contact.css";
 import { BsInstagram } from "react-icons/bs";
 import { TbArrowBigRightLines } from "react-icons/tb";
@@ -9,18 +9,24 @@ import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import emailjs from "emailjs-com";
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
-    emailjs.sendForm(
-      "service_cktuaqm",
-      "template_uvhz62b",
-      form.current,
-      "N8X_6KP3MJQ-1gBtY"
-    );
-    e.target.reset(); //the form will reset after submitting
+    if (form.current) {
+      emailjs
+        .sendForm(
+          "service_cktuaqm",
+          "template_uvhz62b",
+          form.current,
+          "N8X_6KP3MJQ-1gBtY"
+        )
+        .then(() => {
+          (e.target as HTMLFormElement).reset();
+        })
+        .catch((err) => console.error("Failed to send email:", err));
+    }
   };
 
   return (

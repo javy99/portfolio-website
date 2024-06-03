@@ -1,4 +1,3 @@
-import React from "react";
 import "./home.css";
 import { AiFillGithub } from "react-icons/ai";
 import { FiTwitter, FiYoutube } from "react-icons/fi";

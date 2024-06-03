@@ -1,4 +1,3 @@
-import React from "react";
 import "./about.css";
 import { TbCloudDownload } from "react-icons/tb";
 import img from "../../assets/javy.png";

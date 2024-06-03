@@ -1,4 +1,3 @@
-import React from "react";
 import "./skills.css";
 import { BiLogoReact } from "react-icons/bi";
 import { IoLogoSass } from "react-icons/io5";
