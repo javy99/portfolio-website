@@ -10,6 +10,7 @@ import pizzaCustom from "../../assets/pizza-customization.png";
 import bombermanImg from "../../assets/bomberman.png";
 import recipeImg from "../../assets/recipe.png";
 import bookRental from "../../assets/book-rental.png";
+import familyBudget from "../../assets/family_budget.png";
 
 const data = [
   {
@@ -104,6 +105,18 @@ const data = [
     desc: "This Laravel project is an online book rental system featuring functionalities for both users and librarians. It includes user authentication, book browsing, searching, borrowing, and management functionalities.",
     tech1: "PHP Laravel",
     tech2: "Tailwind CSS",
+  },
+  {
+    id: 9,
+    image: familyBudget,
+    demo: "#",
+    liveLink: "#",
+    github: "https://github.com/javy99/family-budget",
+    title: "Family Budget",
+    desc: "An Angular app with a Laravel backend for managing family budgets. Features include adding, editing, and listing budget entries with title, amount, and category. It also displays overall income and expenses.",
+    tech1: "Angular",
+    tech2: "Laravel",
+    tech3: "SQLite",
   },
 ];
 
