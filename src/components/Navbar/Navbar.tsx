@@ -60,13 +60,16 @@ const Navbar = () => {
             </a>
           </li>
           <button className="btn">
-            <a href="Javlonbek's Resume.pdf" download="Javlonbek's Resume.pdf">
+            <a
+              href="Javlonbek_Kosimov_CV.pdf"
+              download="Javlonbek_Kosimov_CV.pdf"
+            >
               Resume
             </a>
           </button>
         </ul>
 
-        <div className="closeNavBar" onClick={closeNavBar}>   
+        <div className="closeNavBar" onClick={closeNavBar}>
           <AiFillCloseCircle className="icon" />
         </div>
       </div>

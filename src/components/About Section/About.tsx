@@ -32,9 +32,9 @@ const About = () => {
 
           <div className="aboutBtn">
             <a
-              href="Javlonbek's Resume.pdf"
+              href="Javlonbek_Kosimov_CV.pdf"
               className="flex"
-              download="Javlonbek's Resume.pdf"
+              download="Javlonbek_Kosimov_CV.pdf"
             >
               Download CV <TbCloudDownload className="icon" />
             </a>

@@ -1,49 +1,109 @@
-import React from "react";
 import "./projects.css";
 import { AiFillYoutube } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 // Images =======================================>
-import img from "../../assets/boop-game.png";
+import boopGameImg from "../../assets/boop-game.png";
+import navM8Img from "../../assets/navm8.png";
+import lightBulbImg from "../../assets/lightbulb-game.png";
+import starWars from "../../assets/star-wars.png";
+import pizzaCustom from "../../assets/pizza-customization.png";
+import bombermanImg from "../../assets/bomberman.png";
+import recipeImg from "../../assets/recipe.png";
+import bookRental from "../../assets/book-rental.png";
 
 const data = [
   {
     id: 1,
-    image: img,
-    demo: "https://www.youtube.com/watch?v=9Q9fzHf0m8w",
-    liveLink: "https://boop-game.vercel.app/",
-    github: "",
-    title: "Hotel Incients Docket",
-    desc: "This is an active internal system for a certain Hotel, a Database that helps in storing all the incidents on hotel,",
-    tech1: "Html",
-    tech2: "Css",
-    tech3: "JavaScript",
-    tech4: "PHP",
+    image: navM8Img,
+    demo: "#",
+    liveLink: "https://navm8.vercel.app/",
+    github: "https://github.com/javy99/navM8",
+    title: "navM8",
+    desc: "Web Application for Enhancing Travel Experiences through Local Guide Engagement",
+    tech1: "MongoDB",
+    tech2: "Express.js",
+    tech3: "React JS",
+    tech4: "Node JS",
   },
   {
     id: 2,
-    image: img,
-    demo: "https://www.youtube.com/watch?v=9Q9fzHf0m8w",
+    image: boopGameImg,
+    demo: "#",
     liveLink: "https://boop-game.vercel.app/",
-    github: "",
-    title: "Hotel Incients Docket",
-    desc: "This is an active internal system for a certain Hotel, a Database that helps in storing all the incidents on hotel,",
-    tech1: "Html",
-    tech2: "Css",
+    github: "https://github.com/javy99/Boop-Game",
+    title: "Boop Board Game",
+    desc: "An engaging JavaScript strategy game where players maneuver kittens on a grid, navigating distinctive rules to achieve alignment victories",
+    tech1: "HTML",
+    tech2: "CSS",
     tech3: "JavaScript",
-    tech4: "PHP",
   },
   {
     id: 3,
-    image: img,
-    demo: "https://www.youtube.com/watch?v=9Q9fzHf0m8w",
-    liveLink: "https://boop-game.vercel.app/",
-    github: "",
-    title: "Hotel Incients Docket",
-    desc: "This is an active internal system for a certain Hotel, a Database that helps in storing all the incidents on hotel,",
-    tech1: "Html",
-    tech2: "Css",
+    image: lightBulbImg,
+    demo: "#",
+    liveLink: "https://light-bulb-placement-game.vercel.app/",
+    github: "https://github.com/javy99/star-wars",
+    title: "Light Bulb Placement Game",
+    desc: "A JavaScript puzzle game for strategically placing light bulbs in a grid, adhering to rules, ensuring all spaces in a palace are illuminated",
+    tech1: "HTML",
+    tech2: "CSS",
     tech3: "JavaScript",
-    tech4: "PHP",
+  },
+  {
+    id: 4,
+    image: starWars,
+    demo: "#",
+    liveLink: "https://star-wars-red-mu.vercel.app/",
+    github: "https://github.com/javy99/Light-Bulb-Placement-Game",
+    title: "Star Wars",
+    desc: "A React app that displays Star Wars data. It uses JSON-Server for live content and Figma for design, making it dynamic and user-friendly",
+    tech1: "HTML",
+    tech2: "CSS",
+    tech3: "React JS",
+    tech4: "Chakra UI",
+  },
+  {
+    id: 5,
+    image: pizzaCustom,
+    demo: "#",
+    liveLink: "https://pizza-customization-app.vercel.app/",
+    github: "https://github.com/javy99/Pizza-Customization-App",
+    title: "Pizza Customization App",
+    desc: "A pizza customization app lets users select pizza size and toppings, with a summary box showing selections and a real-time cost calculator based on their choices.",
+    tech1: "React JS",
+  },
+  {
+    id: 6,
+    image: bombermanImg,
+    demo: "#",
+    liveLink: "#",
+    github: "https://github.com/javy99/bomberman",
+    title: "Multiplayer Bomberman",
+    desc: "Bomberman is a maze-based game where players place bombs to destroy obstacles, defeat enemies, and find the exit. The goal is to clear levels and compete against others in multiplayer mode.",
+    tech1: "Java",
+  },
+  {
+    id: 7,
+    image: recipeImg,
+    demo: "#",
+    liveLink: "#",
+    github: "https://github.com/javy99/recipe-book",
+    title: "Recipe Book",
+    desc: "A JavaScript web app that allows users to manage, explore, and favorite recipes. Features include adding, editing, and deleting recipes, with a user- friendly interface organized into modular components",
+    tech1: "HTML",
+    tech2: "CSS",
+    tech3: "JavaScript",
+  },
+  {
+    id: 8,
+    image: bookRental,
+    demo: "#",
+    liveLink: "#",
+    github: "https://github.com/javy99/book-rental-system",
+    title: "Book Rental System",
+    desc: "This Laravel project is an online book rental system featuring functionalities for both users and librarians. It includes user authentication, book browsing, searching, borrowing, and management functionalities.",
+    tech1: "PHP Laravel",
+    tech2: "Tailwind CSS",
   },
 ];
 
