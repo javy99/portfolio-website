@@ -2,15 +2,15 @@ import "./projects.css";
 import { AiFillYoutube } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 // Images =======================================>
-import boopGameImg from "../../assets/boop-game.png";
-import navM8Img from "../../assets/navm8.png";
-import lightBulbImg from "../../assets/lightbulb-game.png";
-import starWars from "../../assets/star-wars.png";
-import pizzaCustom from "../../assets/pizza-customization.png";
-import bombermanImg from "../../assets/bomberman.png";
-import recipeImg from "../../assets/recipe.png";
-import bookRental from "../../assets/book-rental.png";
-import familyBudget from "../../assets/family_budget.png";
+import boopGameImg from "../../assets/projects/boop-game.png";
+import navM8Img from "../../assets/projects/navm8.png";
+import lightBulbImg from "../../assets/projects/lightbulb-game.png";
+import starWars from "../../assets/projects/star-wars.png";
+import pizzaCustom from "../../assets/projects/pizza-customization.png";
+import bombermanImg from "../../assets/projects/bomberman.png";
+import recipeImg from "../../assets/projects/recipe.png";
+import bookRental from "../../assets/projects/book-rental.png";
+import familyBudget from "../../assets/projects/family_budget.png";
 
 const data = [
   {

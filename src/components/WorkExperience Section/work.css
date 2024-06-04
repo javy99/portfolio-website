@@ -1,0 +1,85 @@
+.work .timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.work .timelineItem {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 2rem;
+}
+.work .timelineItem:before {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primaryColor);
+}
+.work .timelineItem .timelineContent {
+  background: var(--projectCardColor);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.work .timelineItem .timelineContent .companyLogo {
+  height: 50px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.work .timelineItem .timelineContent .workTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--textColor);
+}
+.work .timelineItem .timelineContent .workDate,
+.work .timelineItem .timelineContent .workCompany,
+.work .timelineItem .timelineContent .workLocation {
+  display: block;
+  color: var(--secondaryColor);
+  margin-top: 0.3rem;
+}
+.work .timelineItem .timelineContent .workResponsibilities {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+}
+.work .timelineItem .timelineContent .workResponsibilities li {
+  color: var(--secondaryColor);
+  font-weight: 600;
+}
+
+/* MEDIA QUERIES ==================> */
+@media screen and (min-width: 600px) {
+  .work .timeline .timelineItem {
+    padding-left: 60px;
+  }
+  .work .timeline .timelineItem:before {
+    left: 30px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .work {
+    width: 70%;
+    margin: auto;
+  }
+  .work .timeline .timelineItem {
+    padding-left: 80px;
+  }
+  .work .timeline .timelineItem:before {
+    left: 45px;
+  }
+}
+@media screen and (min-width: 1150px) {
+  .work .timeline .timelineItem {
+    padding-left: 100px;
+  }
+  .work .timeline .timelineItem:before {
+    left: 60px;
+  }
+}
+
+/*# sourceMappingURL=work.css.map */

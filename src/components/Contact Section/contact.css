@@ -1,16 +1,3 @@
-/* colors and default size */
-:root {
-  --primaryColor: #00eaff;
-  --primaryHover: hsl(182, 92%, 41%);
-  --secondaryColor: rgb(150, 162, 188);
-  --paragraphColor: rgb(127, 127, 175);
-  --BgColor: #031a30;
-  --formColor: rgb(2, 15, 29);
-  --projectCardColor: #072340;
-  --textColor: #dae4fb;
-  --headerHeight: 3rem;
-}
-
 .contact .contactContainer {
   width: 100%;
   justify-content: center;

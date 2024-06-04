@@ -1,0 +1,109 @@
+.work {
+  .timeline {
+    position: relative;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timelineItem {
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 2rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 15px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background: var(--primaryColor);
+    }
+
+    .timelineContent {
+      background: var(--projectCardColor);
+      padding: 1rem;
+      border-radius: 8px;
+      transition: transform 0.3s;
+
+      .companyLogo {
+        height: 50px;
+        width: auto;
+        margin-bottom: 1rem;
+      }
+
+      .workTitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--textColor);
+      }
+
+      .workDate,
+      .workCompany,
+      .workLocation {
+        display: block;
+        color: var(--secondaryColor);
+        margin-top: 0.3rem;
+      }
+
+      .workResponsibilities {
+        margin-top: 1rem;
+        padding-left: 1.5rem;
+
+        li {
+          color: var(--secondaryColor);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES ==================> */
+@media screen and (min-width: 600px) {
+  .work {
+    .timeline {
+      .timelineItem {
+        padding-left: 60px;
+
+        &:before {
+          left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .work {
+    width: 70%;
+    margin: auto;
+
+    .timeline {
+      .timelineItem {
+        padding-left: 80px;
+
+        &:before {
+          left: 45px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .work {
+    .timeline {
+      .timelineItem {
+        padding-left: 100px;
+
+        &:before {
+          left: 60px;
+        }
+      }
+    }
+  }
+}

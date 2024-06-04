@@ -22,6 +22,30 @@
   --headerHeight: 3rem;
 }
 
+[data-theme="dark"] {
+  --primaryColor: #00eaff !important;
+  --primaryHover: hsl(182, 92%, 41%) !important;
+  --secondaryColor: rgb(150, 162, 188) !important;
+  --paragraphColor: rgb(127, 127, 175) !important;
+  --BgColor: #031a30 !important;
+  --formColor: rgb(2, 15, 29) !important;
+  --projectCardColor: #072340 !important;
+  --textColor: #dae4fb !important;
+}
+
+[data-theme="light"] {
+  --primaryColor: #26a69a !important; /* Light Teal */
+  --primaryHover: #00796b !important; /* Darker Teal */
+
+
+  --secondaryColor: #333 !important;
+  --paragraphColor: #666 !important;
+  --BgColor: #fff !important;
+  --formColor: #f0f0f0 !important;
+  --projectCardColor: #f5f5f5  !important;
+  --textColor: #000 !important;
+}
+
 /* Default css setup */
 html {
   scroll-behavior: smooth;
@@ -65,7 +89,7 @@ img {
 }
 
 .icon {
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -193,7 +217,7 @@ img {
 /* BodyStyling */
 body {
   background: var(--BgColor);
-  color: white;
+  color: var(--textColor);
 }
 
 ::selection {

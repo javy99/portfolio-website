@@ -1,0 +1,73 @@
+.education {
+  padding: 2rem 0;
+
+  .educationList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .educationItem {
+      background: var(--projectCardColor);
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+
+      .educationSchool {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: var(--textColor);
+      }
+
+      .educationLocation,
+      .educationDegree,
+      .educationDate {
+        display: block;
+        color: var(--secondaryColor);
+        margin-top: 0.3rem;
+      }
+
+      .educationDate {
+        margin-top: 1rem;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIES ==================> */
+@media screen and (min-width: 600px) {
+  .education {
+    .educationList {
+      .educationItem {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .education {
+    .educationList {
+      .educationItem {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .education {
+    .educationList {
+      .educationItem {
+        width: 50%;
+      }
+    }
+  }
+}
