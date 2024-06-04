@@ -8,16 +8,35 @@ import Contact from "./components/Contact Section/Contact";
 import Footer from "./components/Footer/Footer";
 import WorkExperience from "./components/WorkExperience Section/WorkExperience";
 import Education from "./components/Education Section/Education";
+import { useState, useEffect } from "react";
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  const toggleTheme = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    setTheme(newTheme);
+    document.documentElement.setAttribute("data-theme", newTheme);
+  };
+
+  useEffect(() => {
+    const currentTheme = localStorage.getItem("theme") || "light";
+    setTheme(currentTheme);
+    document.documentElement.setAttribute("data-theme", currentTheme);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("theme", theme);
+  }, [theme]);
+
   return (
     <>
-      <Navbar />
+      <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Home />
       <About />
       <Skills />
       <WorkExperience />
-      <Education />
+      <Education theme={theme} />
       <Projects />
       <Contact />
       <Footer />

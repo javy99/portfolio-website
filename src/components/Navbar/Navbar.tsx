@@ -4,11 +4,15 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { TbGridDots } from "react-icons/tb";
 import { FaSun, FaMoon } from "react-icons/fa";
 
-const Navbar = () => {
+interface NavbarProps {
+  theme: string;
+  toggleTheme: () => void;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
   // code to toggle on and off the navbar at small width.
   const [active, setActive] = useState("navBar");
   const [activeHeader, setActiveHeader] = useState("header");
-  const [theme, setTheme] = useState("light");
 
   // this will bring in the navbar from the top
   const showNavBar = () => {
@@ -29,32 +33,12 @@ const Navbar = () => {
     }
   };
 
-  const toggleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-      document.documentElement.setAttribute("data-theme", "dark");
-    } else {
-      setTheme("light");
-      document.documentElement.setAttribute("data-theme", "light");
-    }
-  };
-
   useEffect(() => {
     window.addEventListener("scroll", addBg);
     return () => {
       window.removeEventListener("scroll", addBg);
     };
   }, []);
-
-  useEffect(() => {
-    const currentTheme = localStorage.getItem("theme") || "light";
-    setTheme(currentTheme);
-    document.documentElement.setAttribute("data-theme", currentTheme);
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("theme", theme);
-  }, [theme]);
 
   return (
     <header className={activeHeader}>

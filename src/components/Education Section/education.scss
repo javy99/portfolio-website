@@ -14,6 +14,18 @@
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       width: 80%;
       transition: transform 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      transition: transform 0.3s;
+      min-height: 300px;
+
+      .educationLogo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 1rem;
+      }
 
       &:hover {
         transform: scale(1.05);
