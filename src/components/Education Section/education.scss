@@ -1,10 +1,10 @@
 .education {
-  padding: 2rem 0;
-
   .educationList {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    margin-top: 1rem;
+    gap: 30px;
 
     .educationItem {
       background: var(--projectCardColor);
@@ -42,21 +42,13 @@
 }
 
 /* MEDIA QUERIES ==================> */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 480px) {
   .education {
     .educationList {
-      .educationItem {
-        width: 70%;
-      }
-    }
-  }
-}
+      flex-direction: column;
 
-@media screen and (min-width: 769px) {
-  .education {
-    .educationList {
       .educationItem {
-        width: 60%;
+        width: 100%;
       }
     }
   }
@@ -65,6 +57,8 @@
 @media screen and (min-width: 1150px) {
   .education {
     .educationList {
+      flex-direction: row;
+
       .educationItem {
         width: 50%;
       }
