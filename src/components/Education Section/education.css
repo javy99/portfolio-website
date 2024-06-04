@@ -1,6 +1,6 @@
 .education .educationList {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin-top: 1rem;
   gap: 30px;
