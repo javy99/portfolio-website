@@ -1,13 +1,4 @@
 import "./skills.css";
-import { BiLogoReact } from "react-icons/bi";
-import { IoLogoSass } from "react-icons/io5";
-import { IoLogoJavascript } from "react-icons/io";
-import { SiCss3, SiAdobexd, SiAdobephotoshop, SiMysql } from "react-icons/si";
-import { FaHtml5, FaGitSquare } from "react-icons/fa";
-import { DiPhp } from "react-icons/di";
-import { CgFigma } from "react-icons/cg";
-import { AiFillGithub } from "react-icons/ai";
-import { BsWordpress } from "react-icons/bs";
 // Languages =======================================>
 import htmlLogo from "../../assets/skills/html.svg";
 import cssLogo from "../../assets/skills/css.svg";

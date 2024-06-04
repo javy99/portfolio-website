@@ -1,6 +1,5 @@
 import "./home.css";
-import { AiFillGithub } from "react-icons/ai";
-import { FiTwitter, FiYoutube } from "react-icons/fi";
+import { FiLinkedin, FiGithub, FiInstagram } from "react-icons/fi";
 import { TbArrowBigRightLines, TbChevronsDown } from "react-icons/tb";
 
 const Home = () => {
@@ -10,13 +9,13 @@ const Home = () => {
       <div className="leftIcons">
         <div className="socials grid">
           <a href="https://github.com/javy99" target="_blank">
-            <AiFillGithub className="icon" />
+            <FiGithub className="icon" />
           </a>
-          <a href="#" target="_blank">
-            <FiTwitter className="icon" />
+          <a href="https://www.instagram.com/javy___k/" target="_blank">
+            <FiInstagram className="icon" />
           </a>
-          <a href="#" target="_blank">
-            <FiYoutube className="icon" />
+          <a href="https://www.linkedin.com/in/jkosimov/" target="_blank">
+            <FiLinkedin className="icon" />
           </a>
           <div className="line"></div>
         </div>
