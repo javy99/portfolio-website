@@ -15,9 +15,6 @@
   gap: 2rem 0;
   padding: 1rem 0;
 }
-.skills .skillsContainer .skillGroup .groupTitle {
-  color: var(--textColor);
-}
 .skills .skillsContainer .skillGroup .groupTitle .subTitle {
   display: block;
   padding: 0.3rem 0 1rem;
@@ -25,6 +22,7 @@
   font-weight: 600;
 }
 .skills .skillsContainer .skillGroup .generalSkills {
+  margin-top: 20px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -35,6 +33,11 @@
   display: grid;
   align-items: center;
   justify-content: center;
+}
+.skills .skillsContainer .skillGroup .generalSkills .singleSkill .techLogo {
+  height: 70px;
+  width: 70px;
+  z-index: 500;
 }
 .skills .skillsContainer .skillGroup .generalSkills .singleSkill .iconBox {
   position: relative;
@@ -138,4 +141,6 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-}/*# sourceMappingURL=skills.css.map */
+}
+
+/*# sourceMappingURL=skills.css.map */

@@ -1,12 +1,12 @@
 /* let us first setup our css (main css) */
-@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&family=Roboto:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&family=Roboto:wght@700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Advent Pro', sans-serif;
-  transition: .3s ease;
+  font-family: "Advent Pro", sans-serif;
+  transition: 0.3s ease;
 }
 
 /* colors and default size */
@@ -19,7 +19,7 @@
   --formColor: rgb(2, 15, 29);
   --projectCardColor: #072340;
   --textColor: #dae4fb;
-  --headerHeight: 3rem;  
+  --headerHeight: 3rem;
 }
 
 /* Default css setup */
@@ -45,7 +45,8 @@ li {
   align-content: center;
 }
 
-input, textarea {
+input,
+textarea {
   font-size: 100%;
 }
 
@@ -78,10 +79,9 @@ img {
   background: transparent;
 }
 
-
 /* button hover effect */
 .btn::before {
-  content: '';
+  content: "";
   height: 100%;
   width: 0%;
   background: var(--primaryColor);
@@ -89,11 +89,11 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .btn::after {
-  content: '';
+  content: "";
   height: 100%;
   width: 0%;
   background: var(--BgColor);
@@ -101,10 +101,11 @@ img {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.btn:hover::before, .btn:hover::after {
+.btn:hover::before,
+.btn:hover::after {
   width: 100%;
 }
 
@@ -114,25 +115,25 @@ img {
 
 /* links hover effect */
 .navLink::before {
-  content: '';
+  content: "";
   position: absolute;
   background: var(--primaryHover);
   height: 2px;
   width: 0%;
   bottom: -3px;
   left: 0;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .navLink::after {
-  content: '';
+  content: "";
   position: absolute;
   background: var(--projectCardColor);
   height: 2px;
   width: 0%;
   bottom: -3px;
   left: 0;
-  transition: .8s;
+  transition: 0.8s;
 }
 
 /* Section title */
@@ -183,7 +184,7 @@ img {
   }
 
   100% {
-    left: 100px   ;
+    left: 100px;
   }
 }
 
@@ -201,13 +202,13 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   background: var(--projectCardColor);
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--primaryHover);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 769px) {
@@ -245,57 +246,3 @@ body {
     zoom: 1.7;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
