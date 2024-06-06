@@ -39,6 +39,7 @@
   display: block;
   color: var(--secondaryColor);
   margin-top: 0.3rem;
+  text-align: center;
 }
 .education .educationList .educationItem .educationDate {
   margin-top: 1rem;
