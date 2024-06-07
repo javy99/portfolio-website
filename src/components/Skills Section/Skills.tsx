@@ -49,26 +49,22 @@ const Skills = () => {
               <img src={htmlLogo} alt="HTML" className="techLogo" />
               <span className="skillName">HTML</span>
             </div>
-
             <div className="singleSkill">
               <img src={cssLogo} alt="CSS" className="techLogo" />
               <span className="skillName">CSS</span>
             </div>
-
             <div className="singleSkill">
-              <img src={jsLogo} alt="JS" className="techLogo" />
-              <span className="skillName">JS</span>
+              <img src={jsLogo} alt="JavaScript" className="techLogo" />
+              <span className="skillName">JavaScript</span>
             </div>
             <div className="singleSkill">
-              <img src={tsLogo} alt="TS" className="techLogo" />
-              <span className="skillName">TS</span>
+              <img src={tsLogo} alt="TypeScript" className="techLogo" />
+              <span className="skillName">TypeScript</span>
             </div>
-
             <div className="singleSkill">
               <img src={phpLogo} alt="PHP" className="techLogo" />
               <span className="skillName">PHP</span>
             </div>
-
             <div className="singleSkill">
               <img src={pythonLogo} alt="Python" className="techLogo" />
               <span className="skillName">Python</span>
@@ -78,7 +74,7 @@ const Skills = () => {
 
         {/* single Group of skills */}
         <div className="skillGroup">
-          <h2 className="title">Frameworks</h2>
+          <h2 className="title">Frameworks & Libraries</h2>
 
           <div className="generalSkills">
             {/* single skills div */}
@@ -91,8 +87,8 @@ const Skills = () => {
               <span className="skillName">Express</span>
             </div>
             <div className="singleSkill">
-              <img src={nodeLogo} alt="Node JS" className="techLogo" />
-              <span className="skillName">Node JS</span>
+              <img src={nodeLogo} alt="Node.js" className="techLogo" />
+              <span className="skillName">Node.js</span>
             </div>
             <div className="singleSkill">
               <img src={laravelLogo} alt="Laravel" className="techLogo" />
@@ -103,10 +99,13 @@ const Skills = () => {
               <span className="skillName">Jest</span>
             </div>
             <div className="singleSkill">
-              <img src={robotLogo} alt="Robot" className="techLogo" />
-              <span className="skillName">Robot</span>
+              <img src={seleniumLogo} alt="Selenium" className="techLogo" />
+              <span className="skillName">Selenium</span>
             </div>
-
+            <div className="singleSkill">
+              <img src={robotLogo} alt="Robot Framework" className="techLogo" />
+              <span className="skillName">Robot Framework</span>
+            </div>
             <div className="singleSkill">
               <img src={chakraLogo} alt="Chakra UI" className="techLogo" />
               <span className="skillName">Chakra UI</span>
@@ -120,8 +119,8 @@ const Skills = () => {
               <span className="skillName">Redux</span>
             </div>
             <div className="singleSkill">
-              <img src={mongoLogo} alt="Mongo DB" className="techLogo" />
-              <span className="skillName">Mongo DB</span>
+              <img src={mongoLogo} alt="MongoDB" className="techLogo" />
+              <span className="skillName">MongoDB</span>
             </div>
           </div>
         </div>
@@ -143,10 +142,6 @@ const Skills = () => {
             <div className="singleSkill">
               <img src={jenkinsLogo} alt="Jenkins" className="techLogo" />
               <span className="skillName">Jenkins</span>
-            </div>
-            <div className="singleSkill">
-              <img src={seleniumLogo} alt="Selenium" className="techLogo" />
-              <span className="skillName">Selenium</span>
             </div>
             <div className="singleSkill">
               <img src={figmaLogo} alt="Figma" className="techLogo" />
