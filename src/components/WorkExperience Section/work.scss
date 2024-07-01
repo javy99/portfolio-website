@@ -28,10 +28,19 @@
       border-radius: 8px;
       transition: transform 0.3s;
 
+      .responsibilitiesHeading {
+        margin-top: 1rem;
+        text-decoration: underline;
+      }
+
       .companyLogo {
         height: 50px;
         width: auto;
         margin-bottom: 1rem;
+      }
+
+      .nokiaLogo {
+        height: 30px;
       }
 
       .workTitle {
@@ -49,9 +58,7 @@
       }
 
       .workResponsibilities {
-        margin-top: 1rem;
-        padding-left: 1.5rem;
-
+        margin-top: 0.5rem;
         li {
           color: var(--secondaryColor);
           font-weight: 600;

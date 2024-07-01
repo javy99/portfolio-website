@@ -11,6 +11,7 @@ const experienceData = [
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
     logo: nokiaLogo,
+    logoClass: "nokiaLogo",
     responsibilities: [
       "Implemented GUI automation tests for CBAM using Robot Framework, Selenium, and Python, increasing testing efficiency by 30%.",
       "Designed functions for API calls in Python, enhancing the automation testing framework.",
@@ -26,6 +27,7 @@ const experienceData = [
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
     logo: nokiaLogo,
+    logoClass: "nokiaLogo",
     responsibilities: [
       "Utilized React JS and TypeScript to build a robust UI for Nokia CloudBand Application Manager (CBAM), increasing user engagement by 15%.",
       "Collaborated with UX/UI designers to refresh CBAM’s interface, achieving a 20% uplift in user satisfaction.",
@@ -74,14 +76,28 @@ const WorkExperience = () => {
 
       <div className="timeline">
         {experienceData.map(
-          ({ id, title, date, company, location, logo, responsibilities }) => (
+          ({
+            id,
+            title,
+            date,
+            company,
+            location,
+            logo,
+            responsibilities,
+            logoClass,
+          }) => (
             <div key={id} className="timelineItem">
               <div className="timelineContent">
-                <img src={logo} alt={company} className="companyLogo" />
+                <img
+                  src={logo}
+                  alt={company}
+                  className={`companyLogo ${logoClass}`}
+                />
                 <h3 className="workTitle">{title}</h3>
                 <span className="workDate">{date}</span>
                 <span className="workCompany">{company}</span>
                 <span className="workLocation">{location}</span>
+                <h4 className="responsibilitiesHeading">Responsibilities:</h4>
                 <ul className="workResponsibilities">
                   {responsibilities.map((resp, index) => (
                     <li key={index} style={{ marginBottom: "5px" }}>

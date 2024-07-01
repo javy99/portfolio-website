@@ -25,10 +25,17 @@
   border-radius: 8px;
   transition: transform 0.3s;
 }
+.work .timelineItem .timelineContent .responsibilitiesHeading {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
 .work .timelineItem .timelineContent .companyLogo {
   height: 50px;
   width: auto;
   margin-bottom: 1rem;
+}
+.work .timelineItem .timelineContent .nokiaLogo {
+  height: 30px;
 }
 .work .timelineItem .timelineContent .workTitle {
   font-size: 1.2rem;
@@ -43,8 +50,7 @@
   margin-top: 0.3rem;
 }
 .work .timelineItem .timelineContent .workResponsibilities {
-  margin-top: 1rem;
-  padding-left: 1.5rem;
+  margin-top: 0.5rem;
 }
 .work .timelineItem .timelineContent .workResponsibilities li {
   color: var(--secondaryColor);
