@@ -23,11 +23,11 @@ const About = () => {
             accessible, component-based web pages and systems using HTML, SCSS,
             JavaScript, and PHP, I excel in delivering quality results in
             dynamic work environments.
-            <br />
+            <br /> <br />
             I collaborate effectively with diverse teams and am passionate about
             continuous learning, always eager to explore new technologies to
             enhance my skills and become a better developer each day.
-            <br />
+            <br /> <br />
             Result-oriented and committed to excellence, I am ready to tackle
             new challenges and make a significant impact in the IT industry.
           </h4>
