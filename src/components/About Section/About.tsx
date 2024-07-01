@@ -18,15 +18,18 @@ const About = () => {
       <div className="sectionContent grid">
         <div className="textSection">
           <h4>
-            I'm a success-driven, determined Frontend developer. I have
-            experience using HTML SCSS JavaScript and PHP to build accessible
-            component-based web pages and systems.
+            I am a success-driven and determined Frontend Developer specializing
+            in React.js with TypeScript. With extensive experience in building
+            accessible, component-based web pages and systems using HTML, SCSS,
+            JavaScript, and PHP, I excel in delivering quality results in
+            dynamic work environments.
             <br />
-            Ability to deliver quality results while collaborating in rapidly
-            changing work environments and team composition.
-            <br />A passionate person willing to learn more technologies to
-            become a better developer than i was yesterday. So determined and
-            result oriented.
+            I collaborate effectively with diverse teams and am passionate about
+            continuous learning, always eager to explore new technologies to
+            enhance my skills and become a better developer each day.
+            <br />
+            Result-oriented and committed to excellence, I am ready to tackle
+            new challenges and make a significant impact in the IT industry.
           </h4>
 
           <div className="aboutBtn">
