@@ -22,7 +22,7 @@ const experienceData = [
   },
   {
     id: 2,
-    title: "Frontend Developer Intern)",
+    title: "Frontend Developer Intern",
     date: "Mar 2023 – Feb 2024",
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
