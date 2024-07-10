@@ -22,7 +22,7 @@ const experienceData = [
   },
   {
     id: 2,
-    title: "Trainee NCD (Front-end Development Internship)",
+    title: "Frontend Developer Intern)",
     date: "Mar 2023 – Feb 2024",
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
