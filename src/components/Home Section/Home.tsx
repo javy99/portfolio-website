@@ -32,7 +32,7 @@ const Home = () => {
         </span>
 
         <p className="homeParagraph">
-          I code within required coding standards and styles to server the exact
+          I code within required coding standards and styles to serve the exact
           need.
         </p>
 

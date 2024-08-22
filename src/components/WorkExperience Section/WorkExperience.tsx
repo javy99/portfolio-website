@@ -13,8 +13,11 @@ const experienceData = [
     logo: nokiaLogo,
     logoClass: "nokiaLogo",
     responsibilities: [
-      "Used Robot Framework, Selenium, and Python to develop and implement GUI automation tests for CBAM, resulting in a 30% increase in testing efficiency.",
-      "Addressed and resolved frontend bugs in CBAM using React JS and TypeScript, reducing user-reported issues by 25%.",
+      "Implemented GUI automation tests for CBAM using Robot Framework, Selenium, and Python, increasing testing efficiency by 30%.",
+      "Designed functions for API calls in Python, enhancing the automation testing framework.",
+      "Automated tests for CBAM, boosting system reliability by 15%.",
+      "Delivered tests to the team, showcasing a 20% improvement in system functionality.",
+      "Resolved CBAM frontend bugs with React and TypeScript, reducing user-reported issues by 25%.",
     ],
   },
   {
@@ -26,9 +29,11 @@ const experienceData = [
     logo: nokiaLogo,
     logoClass: "nokiaLogo",
     responsibilities: [
-      "Utilized React JS and TypeScript to build a robust UI for Nokia CloudBand Application Manager (CBAM), leading to a 15% increase in user engagement.",
+      "Utilized React JS and TypeScript to build a robust UI for Nokia CloudBand Application Manager (CBAM), increasing user engagement by 15%.",
       "Collaborated with UX/UI designers to refresh CBAM’s interface, achieving a 20% uplift in user satisfaction.",
-      "Implemented new features and optimized existing ones, which enhanced the application’s performance by 10%.",
+      "Implemented new features and optimized existing ones, enhancing the application’s performance by 10%.",
+      "Refined 50+ pages of CBAM documentation, facilitating smoother development and better user understanding.",
+      "Maintained 20+ frontend dependencies, improving security and reducing vulnerabilities by 25%.",
     ],
   },
   {
@@ -39,7 +44,7 @@ const experienceData = [
     location: "Oslo, Norway",
     logo: limeLightLogo,
     responsibilities: [
-      "Enhanced project skills and completed tasks during a 320-hour internship under the ERASMUS+ KA103 program, contributing to a 20% increase in team productivity.",
+      "Accomplished a 320-hour internship under the ERASMUS+ KA103 program, contributing to a 20% increase in team productivity.",
     ],
   },
   {
@@ -50,8 +55,8 @@ const experienceData = [
     location: "Tashkent, Uzbekistan",
     logo: uzinfocomLogo,
     responsibilities: [
-      "Used HTML, CSS, and JavaScript to improve 10+ websites, resulting in a 30% improvement in functionality and user experience.",
-      "Conducted code reviews to detect and fix front-end bugs, reducing the error rate by 20%.",
+      "Improved 10+ websites using HTML, CSS, and JavaScript, resulting in a 30% improvement in functionality and user experience.",
+      "Performed code reviews to detect and fix front-end bugs, reducing the error rate by 20%.",
     ],
   },
 ];
