@@ -14,8 +14,6 @@ const experienceData = [
     logoClass: "nokiaLogo",
     responsibilities: [
       "Implemented GUI automation tests for CBAM using Robot Framework, Selenium, and Python, increasing testing efficiency by 30%.",
-      "Designed functions for API calls in Python, enhancing the automation testing framework.",
-      "Automated tests for CBAM, boosting system reliability by 15%.",
       "Delivered tests to the team, showcasing a 20% improvement in system functionality.",
       "Resolved CBAM frontend bugs with React and TypeScript, reducing user-reported issues by 25%.",
     ],
