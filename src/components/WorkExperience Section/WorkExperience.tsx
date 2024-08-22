@@ -6,8 +6,8 @@ import uzinfocomLogo from "../../assets/work/uzinfocom.png";
 const experienceData = [
   {
     id: 1,
-    title: "R&D Trainee",
-    date: "Mar 2024 – Present",
+    title: "Software Engineer Trainee",
+    date: "Mar 2024 – July 2024",
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
     logo: nokiaLogo,
@@ -19,7 +19,7 @@ const experienceData = [
   },
   {
     id: 2,
-    title: "Trainee NCD (Front-end Development Internship)",
+    title: "Frontend Developer Trainee",
     date: "Mar 2023 – Feb 2024",
     company: "Nokia Solutions and Networks Kft.",
     location: "Budapest, Hungary",
@@ -33,7 +33,7 @@ const experienceData = [
   },
   {
     id: 3,
-    title: "Web Development Intern",
+    title: "Web Development Trainee",
     date: "Mar 2024 – May 2024",
     company: "Lime Light Renhold AS",
     location: "Oslo, Norway",
