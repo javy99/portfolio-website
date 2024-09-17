@@ -9,7 +9,7 @@ const educationData = [
     school: "Eötvös Loránd University",
     location: "Budapest, Hungary",
     degree: "Bachelor of Science – BS, Computer Science",
-    date: "Sep 2021 – now (exp. July 2024)",
+    date: "Sep 2021 – July 2024",
     logoLight: elteLogoLight,
     logoDark: elteLogoDark,
   },

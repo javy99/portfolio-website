@@ -27,13 +27,10 @@ const Home = () => {
 
         <h1 className="title">Javlonbek Kosimov</h1>
 
-        <span className="subTitle">
-          I develop scalable web based applications and software.
-        </span>
+        <span className="subTitle"> Crafting intuitive and high-performance web applications with precision. </span>
 
-        <p className="homeParagraph">
-          I code within required coding standards and styles to serve the exact
-          need.
+        <p className="homeParagraph"> I specialize in transforming complex ideas into seamless digital experiences, focusing on clean, efficient code and innovative solutions to meet your specific needs.
+
         </p>
 
         <div className="lowerHomeSection">

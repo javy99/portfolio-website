@@ -17,19 +17,10 @@ const About = () => {
 
       <div className="sectionContent grid">
         <div className="textSection">
-          <h4>
-            I am a success-driven and determined Frontend Developer specializing
-            in React.js with TypeScript. With extensive experience in building
-            accessible, component-based web pages and systems using HTML, SCSS,
-            JavaScript, and PHP, I excel in delivering quality results in
-            dynamic work environments.
-            <br /> <br />
-            I collaborate effectively with diverse teams and am passionate about
-            continuous learning, always eager to explore new technologies to
-            enhance my skills and become a better developer each day.
-            <br /> <br />
-            Result-oriented and committed to excellence, I am ready to tackle
-            new challenges and make a significant impact in the IT industry.
+          <h4> I am a dedicated Frontend Developer with experience in ReactJS, TypeScript, and Python. My work at Nokia Solutions and Networks Kft. involved building scalable UI components and enhancing application performance, while my time at Lime Light Renhold AS and UZINFOCOM focused on creating responsive, user-friendly web interfaces.
+            <br />
+            With a strong background in both practical development and rigorous testing, I excel in delivering high-quality, dynamic web applications. I am passionate about continuous learning and thrive in collaborative environments, always seeking to apply my skills to new challenges and innovative projects.
+
           </h4>
 
           <div className="aboutBtn">
