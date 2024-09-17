@@ -8,19 +8,18 @@ const Home = () => {
       {/* this div will be only visible at wider screen */}
       <div className="leftIcons">
         <div className="socials grid">
-          <a href="https://github.com/javy99" target="_blank">
+          <a href="https://github.com/javy99" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
             <FiGithub className="icon" />
           </a>
-          <a href="https://www.instagram.com/javy___k/" target="_blank">
+          <a href="https://www.instagram.com/javy___k/" target="_blank" rel="noopener noreferrer" title="Instagram Profile">
             <FiInstagram className="icon" />
           </a>
-          <a href="https://www.linkedin.com/in/jkosimov/" target="_blank">
+          <a href="https://www.linkedin.com/in/jkosimov/" target="_blank" rel="noopener noreferrer" title="LinkedIn Profile">
             <FiLinkedin className="icon" />
           </a>
           <div className="line"></div>
         </div>
       </div>
-
       {/* homeContent */}
       <div className="container homeContainer">
         <span className="introText">Hi my name is,</span>
@@ -56,6 +55,7 @@ const Home = () => {
             <a
               href="https://mailto:javlonbek.kosimov.99@gmail.com"
               target="_blank"
+              rel="noopener noreferrer"
             >
               javlonbek.kosimov.99@gmail.com
             </a>

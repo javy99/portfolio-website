@@ -7,6 +7,7 @@ import { AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
 // Email JS ===================>
 // import React { useRef } from "react";
 import emailjs from "emailjs-com";
+import { FiGithub } from "react-icons/fi";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -58,6 +59,7 @@ const Contact = () => {
                   href="https://www.instagram.com/javy___k/"
                   className="flex"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Send Message <TbArrowBigRightLines className="icon" />
                 </a>
@@ -75,6 +77,7 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/jkosimov/"
                   className="flex"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Send Message <TbArrowBigRightLines className="icon" />
                 </a>
@@ -89,9 +92,28 @@ const Contact = () => {
 
               <div>
                 <a
-                  href="https://www.instagram.com/javy___k/"
+                  href="https://twitter.com/javy___k" // Updated to Twitter URL
                   className="flex"
                   target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Send Message <TbArrowBigRightLines className="icon" />
+                </a>
+              </div>
+            </div>
+            <div className="card">
+              <div>
+                <FiGithub className="icon" />
+              </div>
+              <h4>GitHub</h4>
+              <span className="userName">@javy99</span>
+
+              <div>
+                <a
+                  href="https://github.com/javy99"
+                  className="flex"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Send Message <TbArrowBigRightLines className="icon" />
                 </a>
